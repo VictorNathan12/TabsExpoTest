@@ -3,7 +3,7 @@ import { StyleSheet, Text } from "react-native";
 export default function HomeScreen() {
   return (
     <>
-      <Text style={s.title}>Pagina Index</Text>
+      <Text style={s.title}>Home</Text>
     </>
   );
 }

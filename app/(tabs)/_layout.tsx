@@ -29,7 +29,10 @@ export default function TabLayout() {
           title: "Home",
           headerShown: false,
           tabBarIcon: () => (
-            <Image source={require("@/assets/icons8-casa.gif")} />
+            <Image
+              style={s.iconTab}
+              source={require("@/assets/icons8-casa.gif")}
+            />
           ),
         }}
       />
@@ -37,6 +40,19 @@ export default function TabLayout() {
         name="explore"
         options={{
           title: "Explore",
+          headerShown: false,
+          tabBarIcon: () => (
+            <Image
+              style={s.iconTab}
+              source={require("@/assets/icons8-pesquisar.gif")}
+            />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="list"
+        options={{
+          title: "List",
           headerShown: false,
           tabBarIcon: () => (
             <Image
